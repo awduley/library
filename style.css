@@ -19,6 +19,7 @@ body {
   grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
   gap: 1rem;
   padding: 1rem;
+  position: relative;
 }
 
 .display div {
@@ -28,4 +29,87 @@ body {
   color: #fff;
   line-height: 1.5;
   box-shadow: 0 0 2px 0 #000;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.btn,
+button {
+  padding: 1rem 2rem;
+  border-radius: 2px;
+  border: 1px solid #000;
+  background: green;
+  color: #fff;
+  cursor: pointer;
+}
+
+.dialog {
+  border: 1px solid #000;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40rem;
+  height: 40rem;
+  border-radius: 2px;
+  background: rgba(0, 0, 0, .94);
+  visibility: hidden;
+  padding: 1rem;
+}
+
+.dialog.show {
+  visibility: visible;
+}
+
+.dialog div p {
+  color: #fff;
+}
+
+.dialog-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 1.8rem;
+  height: 100%;
+}
+
+.dialog-form form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+}
+
+.dialog-form label {
+  color: #fff;
+}
+
+.dialog-form input {
+  color: #414141;
+  padding: .4rem;
+}
+
+.open-close {
+  margin: 0 auto;
+}
+
+.open-close button,
+.open-close input.submit {
+  padding: 1rem 2rem;
+  margin: 1rem;
+  font-size: 1.8rem;
+}
+
+.open-close input.submit {
+  color: #fff;
+  background: green;
+  border: 1px solid #000;
+  cursor: pointer;
+}
+
+.open-close button.cancel {
+  background: red;
 }

@@ -9,7 +9,39 @@
 </head>
 <body>
   <main class="display">
-    
+
   </main>
+  <div class="buttons">
+    <button class="btn add">Add Book</button>
+  </div>
+  <dialog class="dialog" open>
+    <div class="dialog-form">
+      <form action="" method="get">
+
+        <div>
+          <label for="title">Enter title: </label>
+          <input type="text" name="title" id="title" required>
+        </div>
+
+        <div>
+          <label for="author">Enter Author: </label>
+          <input type="text" name="author" id="author" required>
+        </div>
+
+        <div>
+          <label for="year-published">Enter year published: </label>
+          <input type="number" name="year-published" id="year-published" required>
+        </div>
+
+        <div class="open-close">
+          <input type="submit" class="submit">Submit</input>
+          <button class="cancel">Cancel</button>
+        </div>
+
+      </form>
+      
+    </div>
+  </dialog>
+  
 </body>
 </html>
